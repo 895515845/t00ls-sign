@@ -2,8 +2,8 @@ name: T00ls 签到
 
 on:
   schedule:
-    # 每天 UTC 0:00 (北京时间 8:00)
-    - cron: '0 0 * * *'
+    # 每隔 6 小时运行一次
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
